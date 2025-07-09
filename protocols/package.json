@@ -1,0 +1,19 @@
+{
+  "name": "protocols",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Sayed Tahsin",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "dgram": "^1.0.1",
+    "express": "^5.1.0",
+    "ftp": "^0.3.10",
+    "mqtt": "^5.13.2",
+    "nodemailer": "^7.0.5",
+    "smtp-server": "^3.14.0",
+    "ws": "^8.18.3"
+  }
+}
