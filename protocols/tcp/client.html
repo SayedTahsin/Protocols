@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TCP Bridge via WebSocket</title>
+  </head>
+  <body>
+    <h2>WebSocket → TCP Bridge</h2>
+    <input id="msg" placeholder="Type a message..." />
+    <button onclick="send()">Send</button>
+    <pre id="log"></pre>
+
+    <script>
+      const ws = new WebSocket("ws://localhost:4000")
+      const log = (msg) =>
+        (document.getElementById("log").textContent += msg + "\n")
+
+      ws.onopen = () => log("✅ WebSocket connected")
+      ws.onmessage = (e) => log("📨 From TCP: " + e.data)
+      ws.onclose = () => log("❌ WebSocket closed")
+
+      function send() {
+        const val = document.getElementById("msg").value
+        ws.send(val)
+        log("➡️ Sent: " + val)
+      }
+    </script>
+  </body>
+</html>
