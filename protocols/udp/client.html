@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebSocket-to-UDP Bridge</title>
+  </head>
+  <body>
+    <h2>WebSocket-to-UDP Bridge Demo</h2>
+    <input id="input" placeholder="Type message..." />
+    <button onclick="sendMessage()">Send</button>
+    <pre id="log"></pre>
+
+    <script>
+      const ws = new WebSocket("ws://localhost:8080")
+      const log = document.getElementById("log")
+
+      ws.onopen = () => (log.textContent += "Connected to WebSocket bridge\n")
+      ws.onmessage = (e) =>
+        (log.textContent += `Received from UDP server: ${e.data}\n`)
+      ws.onclose = () => (log.textContent += "Disconnected\n")
+
+      function sendMessage() {
+        const input = document.getElementById("input")
+        ws.send(input.value)
+        log.textContent += `Sent to bridge: ${input.value}\n`
+        input.value = ""
+      }
+    </script>
+  </body>
+</html>
