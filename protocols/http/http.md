@@ -60,7 +60,7 @@ When you host a HTTPS server, you need a **TLS certificate** issued by a trusted
 
 ### TLS (Transport Layer Security)
 
-TLS is the encryption protocol used to secure communication over networks. It’s the successor to SSL (more secure and modern).It's what powers HTTPS, FTPS, SMTP over TLS, etc.
+TLS is the encryption protocol used to secure communication over networks. It’s the successor to SSL (more secure and modern).It's what powers HTTPS, FTPS, SMTP, etc.
 TLS handles:
 
 - Handshakes
