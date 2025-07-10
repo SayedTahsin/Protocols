@@ -9,8 +9,8 @@ The focus is on clearly illustrating the core concepts, behavior, and practical 
 | Protocol         | Description                                      | Layer       | Status      |
 | ---------------- | ------------------------------------------------ | ----------- | ----------- |
 | HTTP/HTTPS/HTTP2 | Application protocol for web communication       | Application | Complete    |
-| TCP              | Reliable, connection-oriented transport protocol | Transport   | In Progress |
-| UDP              | Lightweight, connectionless transport protocol   | Transport   | Planned     |
+| TCP              | Reliable, connection-oriented transport protocol | Transport   | Complete    |
+| UDP              | Lightweight, connectionless transport protocol   | Transport   | In Progress |
 | gRPC             | Modern RPC framework using HTTP/2 and protobuf   | Application | Planned     |
 | MQTT             | Lightweight messaging protocol for IoT           | Application | Planned     |
 | QUIC             | Multiplexed, secure transport over UDP           | Transport   | Planned     |
