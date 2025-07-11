@@ -8,6 +8,8 @@
   "license": "MIT",
   "type": "commonjs",
   "dependencies": {
+    "@grpc/grpc-js": "^1.13.4",
+    "@grpc/proto-loader": "^0.7.15",
     "dgram": "^1.0.1",
     "express": "^5.1.0",
     "ftp": "^0.3.10",
@@ -16,5 +18,10 @@
     "nodemailer": "^7.0.5",
     "smtp-server": "^3.14.0",
     "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.13",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }
