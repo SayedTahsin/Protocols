@@ -25,6 +25,7 @@
 - TCP won’t instantly tell you if the other side is gone → use timeouts or `socket.on("close")`
 - Idle connections can be killed by firewalls → keep them alive with pings
 - It’s just bytes, not full messages → design your own message boundaries
+- It has Head-of-Line (HoL) Blocking issue. As it's streams data in order, if one packet is slow/stuck -> it blocks the next packets (even if they are ready)
 
 ---
 
