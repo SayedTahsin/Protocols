@@ -10,6 +10,7 @@
   "dependencies": {
     "@grpc/grpc-js": "^1.13.4",
     "@grpc/proto-loader": "^0.7.15",
+    "aedes": "^0.51.3",
     "dgram": "^1.0.1",
     "express": "^5.1.0",
     "ftp": "^0.3.10",
